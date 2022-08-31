@@ -1,9 +1,15 @@
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100%;
+    background-color: #fefefe;
+}
+
+.navbar{
+    background-color: #FFF;
 }
 
 .sideNav{
+    background-color: #FFF;
     box-shadow: 5px 0 5px -2px #EEE;
 }
 
@@ -13,7 +19,7 @@ html, body {
 }
 
 .btn-hover:first-of-type{
-    color: #ffffff;
+    color: #FFF;
     background-image: linear-gradient(to right, #c60c0f , #82123f);
 }
 
@@ -45,35 +51,91 @@ html, body {
 
 .btn-footer:hover{
     border: none;
-    color: #fff;
-    background-color: #777;
+    color: #777;
+    background-color: #e3e6ff;
 }
 
 .header-btn{
     border-radius: 5px;
     background-image: linear-gradient(to right, #c60c0f , #82123f);
-    color: #fff;
+    color: #FFF;
     padding: 10px 14px;
     text-decoration: none;
     cursor: pointer;
 }
 
 .header-btn:hover{
-    background-color: #fff;
+    background-color: #FFF;
     color: #222222;
 }
 
 .header-bar{
     box-shadow: 0 7px 2px -5px #EEE;
+    min-width: 100%;
+
 }
 
 .notif-bell{
-    height: 50px;
-    width: 50px;
     border-left: solid #EEE;
     border-right: solid #EEE;
+    border-width: 2px;
+}
+
+.notif-bell:hover{
+    background-color: #e3e6ff;;
 }
 
 .icon-notif{
-    
+    width: 80%;
+}
+
+.profile-pic{
+    max-height: 50px;
+}
+
+.profile-anchor{
+    text-decoration: none;
+    cursor: pointer;
+    color: #222222;
+}
+
+.profile-anchor:hover{
+    background-color: #e3e6ff;
+    color: #222222;
+}
+
+.arrow-btn{
+    height: 15%;
+    transform: rotate(180deg);
+}
+
+.banner-img{
+    width: 75%;
+}
+
+.card-titletext{
+    color: #c60c0f;
+    border-right: solid #c60c0f;
+    border-width: 2px;
+}
+
+.card{
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 #EEE, 0 6px 20px 0 #EEE;
+}
+
+.profile-image{
+    width: 95%;
+}
+
+.card-login{
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 #EEE, 0 6px 20px 0 #EEE;
+}
+
+.time-text{
+    border-left: solid #c60c0f;
+    border-width: 2px;
+    line-height: 98%;
+    color: #c60c0f;
 }
