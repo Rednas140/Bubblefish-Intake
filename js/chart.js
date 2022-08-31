@@ -3,7 +3,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Year', 'Totaal aantal websites', 'Totaal aantal koppelingen', 'Actieve koppelingen', 'Niet Actieve koppelingen'],
+    ['Year', 'Aantal websites', 'Aantal koppelingen', 'Actieve koppelingen', 'Inactieve koppelingen'],
     ['2015', 8, 8, 8, 0],
     ['2016', 10, 16, 12, 0],
     ['2017', 15, 20, 17, 2],

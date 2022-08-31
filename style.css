@@ -6,6 +6,8 @@ html, body {
 
 .navbar{
     background-color: #FFF;
+    height: 10%;
+    z-index: 2;
 }
 
 .sideNav{
@@ -78,7 +80,14 @@ html, body {
 .notif-bell{
     border-left: solid #EEE;
     border-right: solid #EEE;
+    line-height: 200%;
     border-width: 2px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .notif-bell:hover{
@@ -125,7 +134,7 @@ html, body {
 }
 
 .profile-image{
-    width: 95%;
+    width: 85%;
 }
 
 .card-login{
@@ -139,3 +148,30 @@ html, body {
     line-height: 98%;
     color: #c60c0f;
 }
+.notif-screen{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    width: 15%;
+    height: 90%;
+    top: 10%;
+    right: 0;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 #EEE, 0 6px 20px 0 #EEE;
+    z-index: 2;
+}
+
+.show-notifScreen{
+    display: block;
+}
+
+.logo-img{
+    width: 25%;
+}
+
+.logo-text{
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+}
+
