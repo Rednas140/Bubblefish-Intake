@@ -45,12 +45,12 @@ foreach ($companies as $company) {
             <h1 class="fs-3 fw-bolder logo-text">Bubblefish Agency</h1>
         </header>
         <div class="align-self-center btn-group-vertical w-100 mt-0 pb-5 pe-0" role="group" aria-label="Navigatie van de webpaginas">
-            <a class="w-100 btn-hover py-3 active-btn" href="./index.php">
-                <i class="fa-solid fa-chart-simple fa-xl menu-icon active-btn"></i>
+            <a class="w-100 btn-hover py-3" href="./index.php">
+                <i class="fa-solid fa-chart-simple fa-xl menu-icon"></i>
                 Dashboard
             </a>
-            <a class="w-100 btn-hover py-3" href="./connections.php">
-            <i class="fa-solid fa-plug fa-xl menu-icon"></i>
+            <a class="w-100 btn-hover py-3 active-btn" href="./connections.php">
+            <i class="fa-solid fa-plug fa-xl menu-icon active-btn"></i>
             Koppelingen
             </a>
             <a class="w-100 btn-hover py-3" href="./apis.php">                
@@ -123,54 +123,6 @@ foreach ($companies as $company) {
                     <h5 class="card-title">Statistieken</h5>
                     <h6 class="card-subtitle text-muted">Informatie in een grafiek</h6>
                     <div id="curve_chart" class="line_chart"></div>
-                </div>
-            </div>
-
-            <div class="card col-md-auto px-0 mx-2 border-0 d-flex justify-content-center" style="width: 28vw;">
-                <div class="card-body row justify-content-center">
-                    <h5 class="card-title">Laatste aanmeldingen</h5>
-                    <h6 class="card-subtitle text-muted">Overzicht van de laatste aanmeldingen</h6>
-
-                    <div class="border-0 row card-login align-content-center justify-content-center my-2" style="width: 90%;">
-                        <div class="col-2 p-0 me-4">
-                            <img class="img-fluid profile-image rounded-circle" src="./assets/profilepics/test.jpg" alt="profiel foto">
-                        </div>
-                        <div class="col-9 p-0 align-self-center">
-                            <p class="ps-3 mb-0 time-text fw-semibold">10 uur geleden</p>
-                            <p class="mt-1 mb-0 fw-bolder">Bas Tonje</p>
-                            <p class="mb-0">Centrum van jeugd en gezin</p>
-                        </div>
-                    </div>
-                    <div class="border-0 row card-login align-content-center justify-content-center my-2" style="width: 90%;">
-                        <div class="col-2 p-0 me-4">
-                            <img class="img-fluid profile-image rounded-circle" src="./assets/profilepics/test.jpg" alt="profiel foto">
-                        </div>
-                        <div class="col-9 p-0 align-self-center">
-                            <p class="ps-3 mb-0 time-text fw-semibold">10 uur geleden</p>
-                            <p class="mt-1 mb-0 fw-bolder">Bas Tonje</p>
-                            <p class="mb-0">Centrum van jeugd en gezin</p>
-                        </div>
-                    </div>
-                    <div class="border-0 row card-login align-content-center justify-content-center my-2" style="width: 90%;">
-                        <div class="col-2 p-0 me-4">
-                            <img class="img-fluid profile-image rounded-circle" src="./assets/profilepics/test.jpg" alt="profiel foto">
-                        </div>
-                        <div class="col-9 p-0 align-self-center">
-                            <p class="ps-3 mb-0 time-text fw-semibold">10 uur geleden</p>
-                            <p class="mt-1 mb-0 fw-bolder">Bas Tonje</p>
-                            <p class="mb-0">Centrum van jeugd en gezin</p>
-                        </div>
-                    </div>
-                    <div class="border-0 row card-login align-content-center justify-content-center my-2" style="width: 90%;">
-                        <div class="col-2 p-0 me-4">
-                            <img class="img-fluid profile-image rounded-circle" src="./assets/profilepics/test.jpg" alt="profiel foto">
-                        </div>
-                        <div class="col-9 p-0 align-self-center">
-                            <p class="ps-3 mb-0 time-text fw-semibold">10 uur geleden</p>
-                            <p class="mt-1 mb-0 fw-bolder">Bas Tonje</p>
-                            <p class="mb-0">Centrum van jeugd en gezin</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

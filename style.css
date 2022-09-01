@@ -1,13 +1,7 @@
 html, body {
     overflow-x: hidden;
     height: 100%;
-    background-color: #fefefe;
-}
-
-.navbar{
-    background-color: #FFF;
-    height: 10%;
-    z-index: 2;
+    /* background-color: #fefefe; */
 }
 
 .sideNav{
@@ -18,11 +12,6 @@ html, body {
 .icon-btn{
     width: 9%;
     margin-right: 5%;
-}
-
-.btn-hover:first-of-type{
-    color: #FFF;
-    background-image: linear-gradient(to right, #c60c0f , #82123f);
 }
 
 .btn-hover{
@@ -39,6 +28,20 @@ html, body {
     border: none;
     color: #222222;
     background-color: #e3e6ff;
+}
+
+.menu-icon{
+    color: #c60c0f;
+    padding-right: 10px;
+}
+
+.active-btn{
+    color: #FFF;
+    background-image: linear-gradient(to right, #c60c0f , #82123f);
+}
+
+.active-btn:hover{
+    color: #FFF;
 }
 
 .btn-footer{
@@ -67,22 +70,22 @@ html, body {
 }
 
 .header-btn:hover{
-    background-color: #FFF;
-    color: #222222;
+    color: #FFF;
 }
 
 .header-bar{
+    background-color: #FFF;
+    height: 8%;
+    z-index: 2;
     box-shadow: 0 7px 2px -5px #EEE;
-    min-width: 100%;
-
 }
 
 .notif-bell{
     border-left: solid #EEE;
     border-right: solid #EEE;
-    line-height: 200%;
     border-width: 2px;
     cursor: pointer;
+    height: 100%;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -95,7 +98,8 @@ html, body {
 }
 
 .icon-notif{
-    width: 80%;
+    height: 70%;
+    width: 70%;
 }
 
 .profile-pic{
@@ -138,6 +142,7 @@ html, body {
 }
 
 .card-login{
+    width: 90%;
     border-radius: 2px;
     box-shadow: 0 4px 8px 0 #EEE, 0 6px 20px 0 #EEE;
 }
@@ -152,12 +157,12 @@ html, body {
     z-index: 1;
     display: none;
     position: absolute;
-    width: 15%;
-    height: 90%;
-    top: 10%;
+    width: 30%;
+    height: 92%;
+    top: 8%;
     right: 0;
     background-color: #FFF;
-    box-shadow: 0 4px 8px 0 #EEE, 0 6px 20px 0 #EEE;
+    box-shadow: 0 4px 8px 0 #EEE;
     z-index: 2;
 }
 
@@ -175,3 +180,34 @@ html, body {
     width: 70%;
 }
 
+.red-link{
+    text-decoration: none;
+    color:#c60c0f;
+    font-weight: 500;
+    border-bottom: solid #c60c0f;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.red-link:hover{
+    color: #c60c0f;
+    border-color: #c60c0f;
+}
+
+.api-card{
+    width: 30%;
+}
+
+.card-data{
+    width: 20rem;
+}
+
+.card-profiles{
+    width: 28vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .card-chart{
+        display: none;
+    }
+  }

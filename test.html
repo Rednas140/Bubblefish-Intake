@@ -1,30 +1,3 @@
-<?php
-$jsonData = file_get_contents('./companyData.json');
-$data = json_decode($jsonData, true);
-$companies = $data['companies'];
-
-$totalWeb = 0;
-$totalConnect = 0;
-$activeConnect = 0;
-$inactiveConnect = 0;
-
-foreach ($companies as $company) {
-    $totalConnect = $totalConnect + 1;
-
-    if ($company["type"] == "web") {
-        $totalWeb = $totalWeb + 1;
-    }
-
-    if ($company["status"] == "active") {
-        $activeConnect = $activeConnect + 1;
-    }
-
-    else {
-        $inactiveConnect = $inactiveConnect + 1;
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +9,6 @@ foreach ($companies as $company) {
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="./js/chart.js"></script>
-    <script src="https://kit.fontawesome.com/335ebd1dff.js" crossorigin="anonymous"></script>
 </head>
 <body class="row">
 <nav class="col p-0 sideNav row">
@@ -45,21 +17,21 @@ foreach ($companies as $company) {
             <h1 class="fs-3 fw-bolder logo-text">Bubblefish Agency</h1>
         </header>
         <div class="align-self-center btn-group-vertical w-100 mt-0 pb-5 pe-0" role="group" aria-label="Navigatie van de webpaginas">
-            <a class="w-100 btn-hover py-3 active-btn" href="./index.php">
-                <i class="fa-solid fa-chart-simple fa-xl menu-icon active-btn"></i>
+            <a class="w-100 btn-hover py-3" href="#">
+                <img class="img-fluid icon-btn" src="./assets/dashboard-icon_2021-06-13/dashboard-icon.png" alt="Koppeling icoon" srcset="./assets/dashboard-icon_2021-06-13/dashboard-icon.png 1x, ./assets/dashboard-icon_2021-06-13/dashboard-icon@2x.png 2x, ./assets/dashboard-icon_2021-06-13/dashboard-icon@3x.png 3x,">
                 Dashboard
             </a>
-            <a class="w-100 btn-hover py-3" href="./connections.php">
-            <i class="fa-solid fa-plug fa-xl menu-icon"></i>
-            Koppelingen
+            <a class="w-100 btn-hover py-3" href="#">
+                <img class="img-fluid icon-btn" src="./assets/connect-icon_2021-06-13/connect-icon.png" alt="Koppeling icoon" srcset="./assets/connect-icon_2021-06-13/connect-icon.png 1x, ./assets/connect-icon_2021-06-13/connect-icon@2x.png 2x, ./assets/connect-icon_2021-06-13/connect-icon@3x.png 3x,">
+                Koppelingen
             </a>
-            <a class="w-100 btn-hover py-3" href="./apis.php">                
-            <i class="fa-solid fa-network-wired fa-lg menu-icon"></i>                
-            API's
+            <a class="w-100 btn-hover py-3" href="#">                
+                <img class="img-fluid icon-btn" src="./assets/api-icon_2021-06-13/api-icon.png" alt="API icoon" srcset="./assets/api-icon_2021-06-13/api-icon.png 1x, ./assets/api-icon_2021-06-13/api-icon@2x.png 2x, ./assets/api-icon_2021-06-13/api-icon@3x.png 3x,">
+                API's
             </a>
-            <a class="w-100 btn-hover py-3" href="./customers.php">
-            <i class="fa-solid fa-user fa-xl menu-icon"></i>                
-            Klanten
+            <a class="w-100 btn-hover py-3" href="#">
+                <img class="img-fluid icon-btn" src="./assets/customers-icon_2021-06-13/customers-icon.png" alt="klanten icoon" srcset="./assets/customers-icon_2021-06-13/customers-icon.png 1x, ./assets/customers-icon_2021-06-13/customers-icon@2x.png 2x, ./assets/customers-icon_2021-06-13/customers-icon@3x.png 3x,">
+                Klanten
             </a>
         </div>
         <footer class="btn-group-vertical w-100 align-self-end pe-0 pb-4" role="group" aria-label="Instellingen en logout">
@@ -74,7 +46,7 @@ foreach ($companies as $company) {
         </footer>
     </nav>
     <main class="col-10">
-    <header class="navbar header-bar py-0">
+        <header class="navbar header-bar py-0">
             <a class="nav-item header-btn ms-4 py-2" href="#">+ Nieuwe koppeling</a>
             <div class="d-flex justify-content-end">
                 <a class="notif-bell px-4 d-flex justify-content-center" id="notifToggler">
@@ -88,37 +60,37 @@ foreach ($companies as $company) {
             </div>
         </header>
         <div class="row justify-content-center mt-5">
-            <div class="card col-md-auto px-0 my-4 mx-4 border border-0 card-data">
+            <div class="card col-md-auto px-0 mx-4 border-0" style="width: 20rem;">
                 <img src="./assets/image_2021-06-13/image.png" class="card-img-top banner-img" alt="banner afbeelding" srcset="./assets/image_2021-06-13/image.png 1x, ./assets/image_2021-06-13/image@2x.png 2x, ./assets/image_2021-06-13/image@3x.png 3x,">
                 <div class="card-body row align-items-center justify-content-center pt-0">
-                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"><?= $totalWeb ?></p>
+                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"></p>
                     <p class="card-text col align-self-center">Totaal aantal websites</p>
                 </div>
             </div>
-            <div class="card col-md-auto px-0 my-4 mx-4 border border-0 card-data">
+            <div class="card col-md-auto px-0 mx-4 border-0" style="width: 20rem;">
                 <img src="./assets/image_2021-06-13/image.png" class="card-img-top banner-img" alt="banner afbeelding" srcset="./assets/image_2021-06-13/image.png 1x, ./assets/image_2021-06-13/image@2x.png 2x, ./assets/image_2021-06-13/image@3x.png 3x,">
                 <div class="card-body row align-items-center justify-content-center pt-0">
-                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"><?= $totalConnect ?></p>
+                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"></p>
                     <p class="card-text col align-self-center">Totaal aantal koppelingen</p>
                 </div>
             </div>
-            <div class="card col-md-auto px-0 my-4 mx-4 border border-0 card-data">
+            <div class="card col-md-auto px-0 mx-4 border-0" style="width: 20rem;">
                 <img src="./assets/image_2021-06-13/image.png" class="card-img-top banner-img" alt="banner afbeelding" srcset="./assets/image_2021-06-13/image.png 1x, ./assets/image_2021-06-13/image@2x.png 2x, ./assets/image_2021-06-13/image@3x.png 3x,">
                 <div class="card-body row align-items-center justify-content-center pt-0">
-                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"><?= $activeConnect ?></p>
+                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"></p>
                     <p class="card-text col align-self-center">Actieve koppelingen</p>
                 </div>
             </div>
-            <div class="card col-md-auto px-0 my-4 mx-4 border border-0 card-data">
+            <div class="card col-md-auto px-0 mx-4 border-0" style="width: 20rem;">
                 <img src="./assets/image_2021-06-13/image.png" class="card-img-top banner-img" alt="banner afbeelding" srcset="./assets/image_2021-06-13/image.png 1x, ./assets/image_2021-06-13/image@2x.png 2x, ./assets/image_2021-06-13/image@3x.png 3x,">
                 <div class="card-body row align-items-center justify-content-center pt-0">
-                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"><?= $inactiveConnect ?></p>
+                    <p class="card-text col-4 card-titletext display-5 text-center mb-0 fw-bolder"></p>
                     <p class="card-text col align-self-center">Niet actieve koppelingen</p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center mt-5">
-            <div class="card col-md-auto px-0 mx-2 border-0 card-chart" style="width: 45vw;">
+            <div class="card col-md-auto px-0 mx-2 border-0" style="width: 45vw;">
                 <div class="card-body chart-card justify-content-center">
                     <h5 class="card-title">Statistieken</h5>
                     <h6 class="card-subtitle text-muted">Informatie in een grafiek</h6>
@@ -174,7 +146,7 @@ foreach ($companies as $company) {
                 </div>
             </div>
         </div>
-        <aside class="notif-screen p-3 align-items-center row" id="notifScreen">
+        <div class="notif-screen p-3 align-items-center row" id="notifScreen">
             <div class="row col">
                 <h5 class="col-6 mb-0">Meldingen</h5>
                 <a class="red-link col-3 align-self-end text-center" id="closeScreen">Sluiten</a>
@@ -195,7 +167,7 @@ foreach ($companies as $company) {
                     <a class="mb-0 red-link">Bekijken</a>
                 </div>
             </div>
-        </aside>
+        </div>
     </main>
     <script src="./js/notifScreen.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
