@@ -1,7 +1,6 @@
 html, body {
     overflow-x: hidden;
     height: 100%;
-    /* background-color: #fefefe; */
 }
 
 .sideNav{
@@ -24,7 +23,7 @@ html, body {
     cursor: pointer;
 }
 
-.btn-hover:hover{
+.btn-hover:hover, .btn-hover:focus{
     border: none;
     color: #222222;
     background-color: #e3e6ff;
@@ -40,7 +39,7 @@ html, body {
     background-image: linear-gradient(to right, #c60c0f , #82123f);
 }
 
-.active-btn:hover{
+.active-btn:hover, .active-btn:focus{
     color: #FFF;
 }
 
@@ -69,7 +68,7 @@ html, body {
     cursor: pointer;
 }
 
-.header-btn:hover{
+.header-btn:hover, .header-btn:focus{
     color: #FFF;
 }
 
@@ -93,7 +92,7 @@ html, body {
     user-select: none;
 }
 
-.notif-bell:hover{
+.notif-bell:hover, .notif-bell:focus{
     background-color: #e3e6ff;;
 }
 
@@ -112,7 +111,7 @@ html, body {
     color: #222222;
 }
 
-.profile-anchor:hover{
+.profile-anchor:hover, .profile-anchor:focus{
     background-color: #e3e6ff;
     color: #222222;
 }
@@ -154,20 +153,22 @@ html, body {
     color: #c60c0f;
 }
 .notif-screen{
-    z-index: 1;
-    display: none;
+    display: block;
     position: absolute;
     width: 30%;
     height: 92%;
     top: 8%;
-    right: 0;
+    transition: 1s;
+    right: -35%;
     background-color: #FFF;
     box-shadow: 0 4px 8px 0 #EEE;
     z-index: 2;
 }
 
 .show-notifScreen{
-    display: block;
+    /* display: block; */
+    transition: 1s;
+    right: 0;
 }
 
 .logo-img{
@@ -189,7 +190,7 @@ html, body {
     cursor: pointer;
 }
 
-.red-link:hover{
+.red-link:hover .red-link:focus{
     color: #c60c0f;
     border-color: #c60c0f;
 }
@@ -204,6 +205,10 @@ html, body {
 
 .card-profiles{
     width: 28vw;
+}
+
+.notif-close{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {

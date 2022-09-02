@@ -225,5 +225,35 @@
             "type": "web",
             "status": "active"
         }
+    ],
+    "customers":[
+        {
+            "name":"Bas Tonje",
+            "lastVisit":"10 uur geleden",
+            "company":"Centrum van jeugd en gezin"
+        },
+        {
+            "name":"Stef Wafels",
+            "lastVisit":"11.46, 26 okt 2020",
+            "company":"een prik zo gepiept"
+        },
+        {
+            "name":"Billy koek",
+            "lastVisit":"16.52, 26 okt 2020",
+            "company":"Centrum van jeugd en gezin"
+        }
+    ],
+    "notifications":[
+        {
+            "title":"Nieuw teamlid toegevoegd",
+            "content":"Er is een nieuw teamlid 'Bas Tonje' aan het team toegevoegd door Leon Bouterse.",
+            "timePlaced":"10 uur geleden"
+        },
+        {
+            "title":"Nieuw API toegevoegd",
+            "content":"Stef Wafels heeft een koppeling gemaakt met de API Klanten Vertellen.",
+            "timePlaced":"11.46 uur, 26 okt 2020"
+        }
     ]
+
 }

@@ -2,7 +2,9 @@
 session_start();
 
 $notifications = $_SESSION["notifications"];
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +14,8 @@ $notifications = $_SESSION["notifications"];
     <title>Bubblefish Agency API</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./js/chart.js"></script>
     <script src="https://kit.fontawesome.com/335ebd1dff.js" crossorigin="anonymous"></script>
 </head>
 <body class="row">
@@ -20,17 +24,17 @@ $notifications = $_SESSION["notifications"];
             <img src="./assets/bublefish_logo.png" class="logo-img img-fluid" alt="Logo van Bubblefish">
             <h1 class="fs-3 fw-bolder logo-text">Bubblefish Agency</h1>
         </header>
-        <div class="align-self-center btn-group-vertical w-100 mt-0 pb-5 pe-0" role="group" aria-label="Navigatie van de webpaginas">
+        <div class="align-self-center btn-group-vertical w-100 mt-0 pb-5 pe-0" role="group" >
             <a class="w-100 btn-hover py-3" href="./index.php" aria-label="link naar de dashboard">
                 <i class="fa-solid fa-chart-simple fa-xl menu-icon"></i>
                 Dashboard
             </a>
             <a class="w-100 btn-hover py-3" href="./connections.php" aria-label="link naar de koppelingen">
-            <i class="fa-solid fa-plug fa-xl menu-icon"></i>
-            Koppelingen
+                <i class="fa-solid fa-plug fa-xl menu-icon"></i>
+                Koppelingen
             </a>
-            <a class="w-100 btn-hover py-3 active-btn" href="./apis.php" aria-label="link naar de api's">                
-                <i class="fa-solid fa-network-wired fa-lg menu-icon active-btn"></i>                
+            <a class="w-100 btn-hover py-3" href="./apis.php" aria-label="link naar de api's">                
+                <i class="fa-solid fa-network-wired fa-lg menu-icon"></i>                
                 API's
             </a>
             <a class="w-100 btn-hover py-3" href="./customers.php" aria-label="link naar de klanten">
@@ -39,11 +43,11 @@ $notifications = $_SESSION["notifications"];
             </a>
         </div>
         <footer class="btn-group-vertical w-100 align-self-end pe-0 pb-4" role="group" aria-label="Instellingen en logout">
-                <a class="w-100 btn-footer py-3" href="./settings.php">
+                <a class="w-100 btn-footer py-3 active-btn" href="./settings.php" aria-label="link naar de instellingen">
                     <img class="img-fluid icon-btn" src="./assets/settings-icon_2021-06-13/settings-icon.png" alt="instellingen icoon" srcset="./assets/settings-icon_2021-06-13/settings-icon.png 1x, ./assets/settings-icon_2021-06-13/settings-icon@2x.png 2x, ./assets/settings-icon_2021-06-13/settings-icon@3x.png 3x,">
                     Instellingen
                 </a>
-                <a class="w-100 btn-footer py-3" href="./index.php">
+                <a class="w-100 btn-footer py-3" href="./index.php" aria-label="link naar uitloggen">
                     <img class="img-fluid icon-btn" src="./assets/logout-icon_2021-06-13/logout-icon.png" alt="klanten icoon" srcset="./assets/logout-icon_2021-06-13/logout-icon.png 1x, ./assets/logout-icon_2021-06-13/logout-icon@2x.png 2x, ./assets/logout-icon_2021-06-13/logout-icon@3x.png 3x,">
                     Uitloggen
                 </a>
@@ -65,8 +69,8 @@ $notifications = $_SESSION["notifications"];
         </header>
         <div class="card api-card m-auto mt-5 border-0">
             <div class="card-body">
-                <h5 class="card-title">API koppelingen.</h5>
-                <p class="card-text">Wij realiseren ook Application Programmers Interface (API) koppelingen tussen jouw website en bijvoorbeeld boekingssystemen, recruitment software (bijvoorbeeld AFAS online), backoffice systemen, CRM software en payment providers. Een API maakt het mogelijk dat software applicaties en databronnen met elkaar communiceren en gegevens uitwisselen binnen vooraf gedefinieerde regels. De meeste backoffice software is voorzien van een koppelvlak.</p>
+                <h5 class="card-title">Instellingen</h5>
+                <p class="card-text">Hier zullen in de toekomst de instellingen te zien zijn voor deze website.</p>
             </div>
         </div>
         <aside class="notif-screen p-3 align-items-center row" id="notifScreen">
