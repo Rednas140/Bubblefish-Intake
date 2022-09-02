@@ -230,17 +230,20 @@
         {
             "name":"Bas Tonje",
             "lastVisit":"10 uur geleden",
-            "company":"Centrum van jeugd en gezin"
+            "company":"Centrum van jeugd en gezin",
+            "picture":"./assets/profilepics/image2.jpg"
         },
         {
             "name":"Stef Wafels",
             "lastVisit":"11.46, 26 okt 2020",
-            "company":"een prik zo gepiept"
+            "company":"een prik zo gepiept",
+            "picture":"./assets/profilepics/image3.jpg"
         },
         {
             "name":"Billy koek",
             "lastVisit":"16.52, 26 okt 2020",
-            "company":"Centrum van jeugd en gezin"
+            "company":"Centrum van jeugd en gezin",
+            "picture":"./assets/profilepics/image4.jpg"
         }
     ],
     "notifications":[

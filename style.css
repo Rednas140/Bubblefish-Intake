@@ -4,8 +4,10 @@ html, body {
 }
 
 .sideNav{
+    height: 100%;
     background-color: #FFF;
     box-shadow: 5px 0 5px -2px #EEE;
+    
 }
 
 .icon-btn{
@@ -77,6 +79,10 @@ html, body {
     height: 8%;
     z-index: 2;
     box-shadow: 0 7px 2px -5px #EEE;
+}
+
+main{
+    width: 83.33333333%;
 }
 
 .notif-bell{
@@ -204,15 +210,46 @@ html, body {
 }
 
 .card-profiles{
-    width: 28vw;
+    width: 25%;
 }
 
 .notif-close{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 480px) {
+    .card-profiles{
+        width: 90%;
+    }
+  }
+
+@media (max-width: 768px) {
+    .card-profiles{
+        width: 75%;
+    }
+  }
+
+@media (max-width: 1024px) {
+    .header-bar{
+        display: none;
+    }
+
+    .card-profiles{
+        width: 80%;
+    }
+    .sideNav{
+        width: 100%;
+    }
+    .main-content{
+        width: 100%;
+    }
+  }
+
+@media (max-width: 1400px) {
     .card-chart{
         display: none;
+    }
+    .card-profiles{
+        width: 60%;
     }
   }

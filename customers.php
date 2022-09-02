@@ -59,8 +59,8 @@ $notifications = $_SESSION["notifications"];
                     <img class="img-fluid icon-notif py-4" src="./assets/button-notifications_2021-06-13/button-notifications.png" alt="notificaties" srcset="./assets/button-notifications_2021-06-13/button-notifications.png 1x, ./assets/button-notifications_2021-06-13/button-notifications@2x.png 2x, ./assets/button-notifications_2021-06-13/button-notifications@3x.png 3x,">  
                 </a>
                 <a class="nav-item me-5 px-4 d-flex profile-anchor align-items-center" href="#" aria-label="Openen van het profiel scherm">
-                    <img class="img-fluid profile-pic rounded-circle me-3" src="./assets/profilepics/test.jpg" alt="Profiel foto">
-                    <div class="nav-item me-3 text-nowrap">Myrthe van Eijk</div>
+                    <img class="img-fluid profile-pic rounded-circle me-3" src="./assets/profilepics/image1.jpg" alt="Profiel foto">
+                    <div class="nav-item me-3 text-nowrap">Janneke de Jong</div>
                     <img class="img-fluid arrow-btn" src="./assets/arrow_2021-06-13/arrow.png" alt="instellingen icoon" srcset="./assets/arrow_2021-06-13/arrow.png 1x, ./assets/arrow_2021-06-13/arrow@2x.png 2x, ./assets/arrow_2021-06-13/arrow@3x.png 3x,">
                 </a>
             </div>
@@ -69,10 +69,10 @@ $notifications = $_SESSION["notifications"];
                 <div class="row p-3 justify-content-center align-items-start">
                     <h5 class="card-title">Laatste aanmeldingen</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Overzicht van de laatste aanmeldingen</h6>
-                    <?php foreach($customers as $key=>$value): ?>
+                    <?php foreach($customers as $i=>$value): ?>
                     <div class="border-0 row card-login align-content-center justify-content-center my-2 py-2">
                         <div class="col-2 p-0 me-4 align-self-center">
-                            <img class="img-fluid profile-image rounded-circle" src="./assets/profilepics/test.jpg" alt="profiel foto">
+                            <img class="img-fluid profile-image rounded-circle" src=<?= $value["picture"]?> alt="profiel foto">
                         </div>
                         <div class="col-9 p-0 align-self-center">
                             <p class="ps-3 mb-0 time-text fw-semibold"><?= $value["lastVisit"] ?></p>

@@ -48,7 +48,7 @@ foreach ($companies as $company) {
     <script src="https://kit.fontawesome.com/335ebd1dff.js" crossorigin="anonymous"></script>
 </head>
 <body class="row">
-    <nav class="col p-0 sideNav row">
+    <nav class="col-2 p-0 sideNav row">
         <header class="align-self-start text-center pt-5">
             <img src="./assets/bublefish_logo.png" class="logo-img img-fluid" alt="Logo van Bubblefish">
             <h1 class="fs-3 fw-bolder logo-text">Bubblefish Agency</h1>
@@ -73,16 +73,16 @@ foreach ($companies as $company) {
         </div>
         <footer class="btn-group-vertical w-100 align-self-end pe-0 pb-4" role="group" aria-label="Instellingen en logout">
                 <a class="w-100 btn-footer py-3" href="./settings.php">
-                    <img class="img-fluid icon-btn" src="./assets/settings-icon_2021-06-13/settings-icon.png" alt="instellingen icoon" srcset="./assets/settings-icon_2021-06-13/settings-icon.png 1x, ./assets/settings-icon_2021-06-13/settings-icon@2x.png 2x, ./assets/settings-icon_2021-06-13/settings-icon@3x.png 3x,">
-                    Instellingen
+                <i class="fa-sharp fa-solid fa-gear fa-xl"></i>
+                Instellingen
                 </a>
                 <a class="w-100 btn-footer py-3" href="./index.php">
-                    <img class="img-fluid icon-btn" src="./assets/logout-icon_2021-06-13/logout-icon.png" alt="klanten icoon" srcset="./assets/logout-icon_2021-06-13/logout-icon.png 1x, ./assets/logout-icon_2021-06-13/logout-icon@2x.png 2x, ./assets/logout-icon_2021-06-13/logout-icon@3x.png 3x,">
+                <i class="fa-solid fa-right-from-bracket fa-xl"></i>
                     Uitloggen
                 </a>
         </footer>
     </nav>
-    <main class="col-10">
+    <main class="col-10 main-content">
         <header class="navbar header-bar py-0">
             <a class="nav-item header-btn ms-4 py-2" href="#" aria-label="het maken van een nieuwe koppelingen">+ Nieuwe koppeling</a>
             <div class="d-flex justify-content-end">
@@ -90,8 +90,8 @@ foreach ($companies as $company) {
                     <img class="img-fluid icon-notif py-4" src="./assets/button-notifications_2021-06-13/button-notifications.png" alt="notificaties" srcset="./assets/button-notifications_2021-06-13/button-notifications.png 1x, ./assets/button-notifications_2021-06-13/button-notifications@2x.png 2x, ./assets/button-notifications_2021-06-13/button-notifications@3x.png 3x,">  
                 </a>
                 <a class="nav-item me-5 px-4 d-flex profile-anchor align-items-center" href="#" aria-label="Openen van het profiel scherm">
-                    <img class="img-fluid profile-pic rounded-circle me-3" src="./assets/profilepics/test.jpg" alt="Profiel foto">
-                    <div class="nav-item me-3 text-nowrap">Myrthe van Eijk</div>
+                    <img class="img-fluid profile-pic rounded-circle me-3" src="./assets/profilepics/image1.jpg" alt="Profiel foto">
+                    <div class="nav-item me-3 text-nowrap">Janneke de Jong</div>
                     <img class="img-fluid arrow-btn" src="./assets/arrow_2021-06-13/arrow.png" alt="instellingen icoon" srcset="./assets/arrow_2021-06-13/arrow.png 1x, ./assets/arrow_2021-06-13/arrow@2x.png 2x, ./assets/arrow_2021-06-13/arrow@3x.png 3x,">
                 </a>
             </div>
@@ -142,7 +142,7 @@ foreach ($companies as $company) {
                     <?php foreach($customers as $i=>$value): ?>
                     <div class="border-0 row card-login align-content-center justify-content-center my-2 py-2">
                         <div class="col-2 p-0 me-4 align-self-center">
-                            <img class="img-fluid profile-image rounded-circle" src="./assets/profilepics/test.jpg" alt="profiel foto">
+                            <img class="img-fluid profile-image rounded-circle" src=<?= $value["picture"]?> alt="profiel foto">
                         </div>
                         <div class="col-9 p-0 align-self-center">
                             <p class="ps-3 mb-0 time-text fw-semibold"><?= $value["lastVisit"] ?></p>

@@ -57,8 +57,8 @@ $notifications = $_SESSION["notifications"];
                     <img class="img-fluid icon-notif py-4" src="./assets/button-notifications_2021-06-13/button-notifications.png" alt="notificaties" srcset="./assets/button-notifications_2021-06-13/button-notifications.png 1x, ./assets/button-notifications_2021-06-13/button-notifications@2x.png 2x, ./assets/button-notifications_2021-06-13/button-notifications@3x.png 3x,">  
                 </a>
                 <a class="nav-item me-5 px-4 d-flex profile-anchor align-items-center" href="#" aria-label="Openen van het profiel scherm">
-                    <img class="img-fluid profile-pic rounded-circle me-3" src="./assets/profilepics/test.jpg" alt="Profiel foto">
-                    <div class="nav-item me-3 text-nowrap">Myrthe van Eijk</div>
+                    <img class="img-fluid profile-pic rounded-circle me-3" src="./assets/profilepics/image1.jpg" alt="Profiel foto">
+                    <div class="nav-item me-3 text-nowrap">Janneke de Jong</div>
                     <img class="img-fluid arrow-btn" src="./assets/arrow_2021-06-13/arrow.png" alt="instellingen icoon" srcset="./assets/arrow_2021-06-13/arrow.png 1x, ./assets/arrow_2021-06-13/arrow@2x.png 2x, ./assets/arrow_2021-06-13/arrow@3x.png 3x,">
                 </a>
             </div>
